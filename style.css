@@ -613,8 +613,9 @@ section {
     color: var(--text-primary);
     font-weight: 700;
     font-size: 1.1rem;
-    border: 2px solid var(--glass-border);
     border-radius: 30px;
+    border: none;
+    outline: 1px solid rgba(255, 255, 255, 0.2);
     transition: var(--transition);
 }
 
@@ -626,8 +627,8 @@ section {
 
 .review-btn:hover {
     background: var(--neon-gradient);
-    border-color: transparent;
     color: #fff;
+    outline: 1px solid transparent;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(219, 36, 22, 0.3);
 }
@@ -637,7 +638,14 @@ section {
 }
 
 [data-theme='light'] .review-btn {
-    border-color: rgba(0, 0, 0, 0.1);
+    background: transparent;
+    border: none;
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='light'] .review-btn:hover {
+    background: var(--neon-gradient);
+    color: #fff;
 }
 
 .contact-form {
@@ -727,22 +735,32 @@ footer {
     min-width: 50px;
     height: 50px;
     padding: 0 15px;
-    background: var(--bg-hover);
-    /* use a softer background instead of transparent */
+    background: transparent;
     border-radius: 25px;
-    /* Pill shape */
     color: var(--text-primary);
-    border: 2px solid var(--glass-border);
+    border: none;
+    outline: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 1.2rem;
     transition: var(--transition);
 }
 
 .socials a:hover {
     background: var(--neon-gradient);
-    border-color: transparent;
     color: #fff;
+    outline: 1px solid transparent;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(255, 206, 0, 0.4);
+}
+
+[data-theme='light'] .socials a:hover {
+    background: var(--neon-gradient);
+    color: #fff;
+    outline: 1px solid transparent;
+}
+
+[data-theme='light'] .socials a {
+    border: none;
+    outline: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .zalo-link {
