@@ -352,6 +352,52 @@ section {
     margin-bottom: 2rem;
 }
 
+.owner-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    background: var(--bg-card);
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+    transition: var(--transition);
+    max-width: 400px;
+}
+
+.owner-profile:hover {
+    border-color: var(--neon-red);
+    box-shadow: 0 5px 15px rgba(219, 36, 22, 0.2);
+    transform: translateY(-3px);
+}
+
+.owner-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid var(--neon-yellow);
+    box-shadow: 0 0 15px rgba(255, 206, 0, 0.3);
+}
+
+.owner-info h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+    color: var(--text-primary);
+}
+
+.owner-info p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    color: var(--neon-yellow);
+    font-weight: 500;
+}
+
+[data-theme='light'] .owner-info p {
+    color: var(--neon-red);
+}
+
 .stats {
     display: flex;
     gap: 2rem;
